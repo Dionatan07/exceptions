@@ -14,6 +14,7 @@ public class Program {
 
         System.out.println("Enter account data");
 
+
         System.out.print("Number: ");
         int number = teclado.nextInt();
 
@@ -36,9 +37,9 @@ public class Program {
         try {
             account.withdraw(amount);
             System.out.printf("New balance: %.2f%n", account.getBalance());
-        }
-        catch (BusinessException e){
+        } catch (BusinessException e) {
             System.out.print(e.getMessage());
+
         }
 
     }
